@@ -1,7 +1,7 @@
 # Tugas Besar Promvis - Kelomok 11 
 
 ## Anggota Kelompok
-- Adinda Salsabila            2005319
+- Adinda Salsabilla            2005319
 - Farah Balqist               2007339
 - Muhamad Fikri Nur Bakhtiar  2001123
 - Salsabila Kanaya            2001360  
