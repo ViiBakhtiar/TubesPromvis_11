@@ -1,6 +1,12 @@
-# tubes
+# Tugas Besar Promvis - Kelomok 11 
 
-Tubes Promivis Kelompok 11
+## Anggota Kelompok
+- Adinda Salsabila            2005319
+- Farah Balqist               2007339
+- Muhamad Fikri Nur Bakhtiar  2001123
+- Salsabila Kanaya            2001360  
+
+Tubes Promvis Kelompok 11
 
 ## Getting Started
 
