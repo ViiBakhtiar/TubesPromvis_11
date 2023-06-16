@@ -52,4 +52,26 @@ create_table_postingan='''
     
 c.execute(create_table_postingan)
 conn.commit()
+
+create_table_detail_umkm= '''
+    CREATE TABLE IF NOT EXISTS detail_umkm(
+    SELECT
+        p.id,
+        u.nama_lengkap.
+        u.alamat,
+        p.maksimum_pendanaan,
+        p.bagi_hasil,
+        p.tenor,
+        p.pendanaan_ke,
+        p.jenis_angsuran
+        p.jumlah_angsuran,
+        p.penghasilan_perbulan
+    FROM
+        postingan p
+    JOIN
+        users u ON p.id = u.id;
+    )
+'''
+c.execute(create_table_postingan)
+conn.commit()
 conn.close()
