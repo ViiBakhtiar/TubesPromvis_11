@@ -106,8 +106,8 @@ class RekomendasiCard extends StatelessWidget {
                       width: 
                         110,
                       padding: EdgeInsets.only(
-                        left: 10,
-                        right: 10,
+                        left: 5,
+                        right: 5,
                       ),
                       decoration: 
                         BoxDecoration(
@@ -128,7 +128,7 @@ class RekomendasiCard extends StatelessWidget {
                           alignment: Alignment.topCenter,
                           // splashFactory: NoSplash.splashFactory,
                           tapTargetSize: MaterialTapTargetSize.shrinkWrap,
-                          textStyle: const TextStyle(fontSize: 12, fontWeight: FontWeight.w600, fontFamily: 'Poppins'),
+                          textStyle: const TextStyle(fontSize: 14, fontWeight: FontWeight.w600, fontFamily: 'Poppins'),
                         ),
                         onPressed: (){ // move to Detail UMKM
                           Navigator.of(context).push(MaterialPageRoute(builder: (context) {
