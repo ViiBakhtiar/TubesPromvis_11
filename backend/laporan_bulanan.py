@@ -17,6 +17,7 @@ class LaporanBulanan(Base):
     __tablename__ = 'laporan_bulanan'
     
     id: int
+    tanggal : str
     username_member: str
     nama_investor: str
     rincian_pendapatan: int

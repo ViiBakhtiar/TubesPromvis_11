@@ -7,6 +7,7 @@ import 'dart:convert';
 
 class LaporanBulanan {
   final int id;
+  final String tanggal;
   final String username_member;
   final String nama_investor;
   final int rincian_pendapatan;
@@ -20,6 +21,7 @@ class LaporanBulanan {
 
   LaporanBulanan({
     required this.id,
+    required this.tanggal,
     required this.username_member,
     required this.nama_investor,
     required this.rincian_pendapatan,
@@ -34,6 +36,7 @@ class LaporanBulanan {
   factory LaporanBulanan.fromJson(Map<String, dynamic> json) {
     return LaporanBulanan(
         id: json['nomor'],
+        tanggal: json['tanggal'],
         username_member: json['username_member'],
         nama_investor: json['nama_investor'],
         rincian_pendapatan: json['rincian_pendapatan'],
@@ -72,6 +75,7 @@ class Laporan2MemberScreen extends StatefulWidget {
 
 class _Laporan2MemberScreenState extends State<Laporan2MemberScreen> {
   String dropdownvalue = list.first;
+  late Future<LaporanBulanan> _LaporanBulananFuture;
   final url = 'http://127.0.0.1:8000';
   final String apiUrl = 'http://127.0.0.1:8000/laporan_bulanan';
 
@@ -87,8 +91,17 @@ class _Laporan2MemberScreenState extends State<Laporan2MemberScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      child: Scaffold(
+    return FutureBuilder<LaporanBulanan>(
+      future: _LaporanBulananFuture,
+      builder: ((context, snapshot) {
+        if(snapshot.connectionState == ConnectionState.waiting){
+          return  Center(child: CircularProgressIndicator());
+        }else if(snapshot.hasError){
+          return Center(child: Text('Error: ${snapshot.error}'));
+        }else{
+          final LaporanBulanan = snapshot.data!;
+          return SafeArea(
+            child: Scaffold(
         backgroundColor: Colors.white,
         resizeToAvoidBottomInset: false,
         body: SingleChildScrollView(
@@ -288,7 +301,7 @@ class _Laporan2MemberScreenState extends State<Laporan2MemberScreen> {
                     TableRow(children: [
                       Text(" "), //empty table
                       Text(
-                        " 26 Januari 2023",
+                        " $[]",
                         textAlign: TextAlign.right,
                         style: const TextStyle(
                             fontSize: 14,
@@ -491,3 +504,8 @@ class _Laporan2MemberScreenState extends State<Laporan2MemberScreen> {
     );
   }
 }
+
+          )
+        }
+      })
+      

@@ -67,6 +67,7 @@ conn.commit()
 create_table_laporan_keuangan_bulanan='''
     CREATE TABLE IF NOT EXISTS laporan_keuangan_bulanan(
             id INTEGER PRIMARY KEY AUTOINCREMENT,
+            tanggal STRING
             username_member STRING,
             username_investor STRING,
             nama_investor STRING,
