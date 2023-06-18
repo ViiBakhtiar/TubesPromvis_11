@@ -72,7 +72,7 @@ class _DaftarInvestorScreenState extends State<DaftarInvestorScreen> {
   GlobalKey<FormState> _formKey = GlobalKey<FormState>();
 
    Future<void> _registerInvestor() async {
-    final String apiUrl = 'http://127.0.0.1:8000/register';
+    final String apiUrl = 'http://127.0.0.1:8000/register/step2/investor';
 
     final Investor user = Investor(
       username: usernameController.text,

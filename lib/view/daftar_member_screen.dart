@@ -68,7 +68,7 @@ class _DaftarMemberScreenState extends State<DaftarMemberScreen> {
   GlobalKey<FormState> _formKey = GlobalKey<FormState>();
 
   Future<void> _registerMember() async{
-    final String apiUrl = 'http://127.0.0.1:8000/register';
+    final String apiUrl = 'http://127.0.0.1:8000/register/step2/member';
 
     final Member user = Member(
       username: usernameController.text,
