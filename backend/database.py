@@ -49,7 +49,17 @@ create_table_postingan='''
             penghasilan_perbulan STRING
     )
 '''
-    
+
+create_table_laporan_keuangan='''
+    CREATE TABLE IF NOT EXISTS postingan(
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            username STRING,
+            nama_transaksi STRING,
+            nominal_transaksi INT,
+            bulan STRING
+    )
+'''
+ 
 c.execute(create_table_postingan)
 conn.commit()
 conn.close()
