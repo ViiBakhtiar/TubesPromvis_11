@@ -70,11 +70,19 @@ class BerandaVisitorScreen extends StatelessWidget {
                                     ),
                                     Spacer(),
                                     //IMAGE PROFILE PIC
+                                    InkWell(
+                                      onTap: () {
+                                        // Navigator.of(context).push(MaterialPageRoute(builder: (context) {
+                                        //   return DaftarChatInvestorScreen();
+                                        // }));
+                                      },
+                                    child:
                                     Padding(
-                                      padding: const EdgeInsets.fromLTRB(0, 15, 5, 10),
-                                      child:
-                                      Image.asset('assets/images/img_notifwhite.png',
-                                      width: 22, height: 25, fit: BoxFit.fill,),
+                                        padding: const EdgeInsets.fromLTRB(0, 15, 5, 10),
+                                        child:
+                                        Image.asset('assets/images/img_notifwhite.png',
+                                        width: 22, height: 25, fit: BoxFit.fill,),
+                                      ),
                                     ),
                                   ],
                                 ),
