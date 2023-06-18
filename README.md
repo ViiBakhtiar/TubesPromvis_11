@@ -1,12 +1,12 @@
-# Tugas Besar Promvis - Kelompok 11 
+# Tugas Besar Pemrograman Visual dan Piranti Bergerak - Kelompok 11 
 
 ## Anggota Kelompok
-- Adinda Salsabilla            2005319
+- Adinda Salsabilla           2005319
 - Farah Balqist               2007339
 - Muhamad Fikri Nur Bakhtiar  2001123
 - Salsabila Kanaya            2001360  
 
-Tubes Promvis Kelompok 11
+Tubes Pemrograman Visual dan Piranti Bergerak Kelompok 11
 
 ## Getting Started
 
