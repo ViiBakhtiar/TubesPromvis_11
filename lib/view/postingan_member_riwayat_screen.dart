@@ -413,7 +413,7 @@ class PostinganMemberRiwayatScreen extends StatelessWidget {
                                 ),
                                 onPressed: () { // routing on pressed EDIT POSTINGAN
                                   Navigator.of(context).push(MaterialPageRoute(builder: (context) {
-                                    return PostinganMemberBaruScreen();
+                                    return PostinganBaruMemberScreen();
                                   }));          
                                 }, 
                                 child: 
