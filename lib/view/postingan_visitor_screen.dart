@@ -53,36 +53,33 @@ class PostinganVisitorScreen extends StatelessWidget {
                                         ),
                                     ),
                                     Spacer(),
-                                    //IMAGE NOTIFICATION YELLOW
-                                    // Container(padding: const EdgeInsets.fromLTRB(0, 10, 5, 10),
-                                    //   child: 
-                                    //   InkWell(
-                                    //     onTap: () {
-                                    //       // Navigator.pop(context);
-                                    //     }, // Image tapped
-                                    //     splashFactory: InkSparkle.splashFactory,
-                                    //     splashColor: Colors.black, // Splash color over image
-                                    //     child: Ink.image(
-                                    //       fit: BoxFit.fitWidth, // Fixes border issues
-                                    //       width: 20,
-                                    //       height: 25,
-                                    //       image: AssetImage(
-                                    //         'assets/images/img_arrowleft.png',
-                                    //       ),
-                                    //     ),
-                                    //   ),
-                                    // ),
-                                    Padding(
-                                      padding: const EdgeInsets.fromLTRB(0, 15, 15, 15),
+                                    InkWell(
+                                      onTap: () {
+                                        // Navigator.of(context).push(MaterialPageRoute(builder: (context) {
+                                        //   return DaftarChatInvestorScreen();
+                                        // }));
+                                      },
                                       child:
-                                      Image.asset('assets/images/img_chat.png',
-                                      width: 25, height: 25, fit: BoxFit.fill,),
+                                      Padding(
+                                        padding: const EdgeInsets.fromLTRB(0, 15, 15, 15),
+                                        child:
+                                        Image.asset('assets/images/img_chat.png',
+                                        width: 25, height: 25, fit: BoxFit.fill,),
+                                      ),
                                     ),
-                                    Padding(
-                                      padding: const EdgeInsets.fromLTRB(0, 15, 0, 15),
+                                    InkWell(
+                                      onTap: () {
+                                        // Navigator.of(context).push(MaterialPageRoute(builder: (context) {
+                                        //   return DaftarChatInvestorScreen();
+                                        // }));
+                                      },
                                       child:
-                                      Image.asset('assets/images/img_filter.png',
-                                      width: 25, height: 25, fit: BoxFit.fill,),
+                                      Padding(
+                                        padding: const EdgeInsets.fromLTRB(0, 15, 0, 15),
+                                        child:
+                                        Image.asset('assets/images/img_filter.png',
+                                        width: 25, height: 25, fit: BoxFit.fill,),
+                                      ),
                                     ),
                                   ],
                                 ),
