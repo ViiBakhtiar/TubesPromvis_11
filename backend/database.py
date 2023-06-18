@@ -49,9 +49,11 @@ create_table_postingan='''
             penghasilan_perbulan STRING
     )
 '''
+c.execute(create_table_postingan)
+conn.commit()
 
 create_table_laporan_keuangan='''
-    CREATE TABLE IF NOT EXISTS postingan(
+    CREATE TABLE IF NOT EXISTS laporan_keuangan(
             id INTEGER PRIMARY KEY AUTOINCREMENT,
             username STRING,
             nama_transaksi STRING,
@@ -59,7 +61,26 @@ create_table_laporan_keuangan='''
             bulan STRING
     )
 '''
- 
-c.execute(create_table_postingan)
+c.execute(create_table_laporan_keuangan)
 conn.commit()
+
+create_table_laporan_keuangan_bulanan='''
+    CREATE TABLE IF NOT EXISTS laporan_keuangan_bulanan(
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            username_member STRING,
+            username_investor STRING,
+            nama_investor STRING,
+            rincian_pendapatan INT,
+            rincian_laba INT,
+            jumlah_cicilan INT,
+            cicilan_telah_dibayar INT,
+            cicilan_harus_dibayar INT,
+            jatuh_tempo STRING,
+            tempo_cicilan INT,
+            tren_bisnis STRING
+    )
+'''
+c.execute(create_table_laporan_keuangan_bulanan)
+conn.commit()
+
 conn.close()

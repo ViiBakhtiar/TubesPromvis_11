@@ -55,7 +55,7 @@ class _Laporan1MemberScreenState extends State<Laporan1MemberScreen> {
   final url = 'http://127.0.0.1:8000';
   final String apiUrl = 'http://127.0.0.1:8000/laporan';
 
-  Future<Laporan> fetchLaporam() async {
+  Future<Laporan> fetchLaporan() async {
     final response = await http.get(Uri.parse("url"));
     if (response.statusCode == 200) {
       final jsonData = json.decode(response.body);
@@ -298,7 +298,7 @@ class _Laporan1MemberScreenState extends State<Laporan1MemberScreen> {
                       Container(
                         padding: EdgeInsets.only(top: 25, bottom: 11),
                         child: Text(
-                          '${Laporan.nomor}',
+                          '',
                           textAlign: TextAlign.center,
                           style: TextStyle(
                             fontSize: 15,
